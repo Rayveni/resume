@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+\usepackage{../components/config}
+
+\begin{document}
+
+\subimport{../components/}{header.tex}
+
+\resumesection{\emoji{scroll} Summary}
+\subimport{../components}{summary.tex}
+
+\resumesection{\emoji{hand-with-fingers-splayed} Skills}
+\subimport{../components/}{skills.tex}
+
+
+
+\resumesection{\emoji{briefcase} Experience}
+\subimport{../components/experiences/}{neoflex.tex}
+\subimport{../components/experiences/}{luxsoft.tex}
+\subimport{../components/experiences/}{other.tex}
+
+\resumesection{\emoji{books} Education}
+\subimport{../components}{education.tex}
+
+
+
+%\resumesection{\emoji{trophy} Awards}
+
+
+\end{document}
